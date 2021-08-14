@@ -1,3 +1,41 @@
+footer {
+  background-color: #161414;
+  border: 2px solid blanchedalmond;
+}
+
+footer h2 {
+  list-style-type: disc;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  text-align-last: center;
+  color: #aff1b2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+footer p {
+  text-align-last: right;
+  color: blanchedalmond;
+  font-size: 10px;
+  padding-top: 2px;
+  padding-right: 3px;
+}
+
+footer svg {
+  margin-top: 8px;
+  margin-left: 30%;
+  color: #ffd89e;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -27,77 +65,8 @@
   }
 }
 
-.body {
-  background-image: url(../scss/multimedia/arcade5.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  width: 100%;
-  height: 100%;
-  border: 2px double #e6e659;
-}
-
-.body fieldset header h1 {
-  text-align-last: center;
-  font-family: "Press Start 2P", cursive;
-  font-weight: 300;
-  font-size: 50px;
-  color: #f5c529;
-  letter-spacing: 3px;
-  margin: 100px;
-  -webkit-animation-name: intermitente;
-          animation-name: intermitente;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.body fieldset header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 150px;
-  list-style-type: none;
-}
-
-.body fieldset header nav li:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-}
-
-.body fieldset header nav a {
-  font-family: "Press Start 2P", cursive;
-  color: #c1c1db;
-  font-size: 20px;
-  font-weight: 100;
-  font-style: italic;
-  border: 2.5px solid #9ce9c5;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#3aafaf));
-  background-image: linear-gradient(blue, #3aafaf);
-  text-decoration: none;
-}
-
-.body main {
-  background-color: #161414;
-}
-
-.body main div img {
-  border: 1px double blanchedalmond;
-  width: 100%;
-  height: 70%;
-}
-
 .bodyI {
-  background-image: url(../scss/multimedia/arcade1.jpg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  width: 100%;
+  background-image: radial-gradient(#000085, #030214);
 }
 
 .bodyI header h1 {
@@ -221,7 +190,7 @@ body .headerC nav a {
 
 body .main {
   margin: 0%;
-  background-image: radial-gradient(#ee7488, #b47d7d);
+  background-image: radial-gradient(#ee7488, #070202);
 }
 
 body .main tr td {
@@ -453,58 +422,69 @@ img:hover {
   transition: 700ms;
 }
 
-footer {
-  background-color: #161414;
-  border: 2px solid blanchedalmond;
+.body {
+  background-image: url(../multimedia/arcade5.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+  border: 2px double #e6e659;
 }
 
-footer h2 {
-  list-style-type: disc;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 40px;
-  font-style: normal;
+.body fieldset header h1 {
   text-align-last: center;
-  color: #aff1b2;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 300;
+  font-size: 50px;
+  color: #f5c529;
+  letter-spacing: 3px;
+  margin: 100px;
   -webkit-animation-name: intermitente;
           animation-name: intermitente;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
 
-footer p {
-  text-align-last: right;
-  color: blanchedalmond;
-  font-size: 10px;
-  padding-top: 2px;
-  padding-right: 3px;
-}
-
-footer svg {
-  margin-top: 8px;
-  margin-left: 30%;
-  color: #ffd89e;
+.body fieldset header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  list-style-type: none;
 }
 
-* {
-  margin: 0%;
-  padding: 0%;
+.body fieldset header nav li:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
-@keyframes intermitente {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
+.body fieldset header nav a {
+  font-family: "Press Start 2P", cursive;
+  color: #c1c1db;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+  border: 2.5px solid #9ce9c5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#3aafaf));
+  background-image: linear-gradient(blue, #3aafaf);
+  text-decoration: none;
+}
+
+.body main {
+  background-color: #161414;
+}
+
+.body main div img {
+  border: 1px double blanchedalmond;
+  width: 100%;
+  height: 70%;
 }
 /*# sourceMappingURL=main.css.map */
