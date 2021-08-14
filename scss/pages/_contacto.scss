@@ -1,0 +1,75 @@
+
+.bodyC{
+    background-image: radial-gradient(rgb(255, 94, 121),black); 
+    header{
+        nav{
+            ul{
+                display: flex;
+                height: 150px;  
+                list-style-type: none;
+                justify-content: space-around;
+                align-items: center;  
+            }
+            li:hover{
+                transform: scale(1.1,1.1);
+            }
+            a{
+                font-family: $fontFamilyBoton;
+                color: $colorTextoBoton; 
+                font-size: $fontsizeBoton; 
+                font-weight: 100;
+                font-style: italic;
+                border: 2.5px solid rgb(156, 233, 197);
+                background-image: $backgroundBoton;
+                text-decoration: none;
+            }
+        }
+    }
+    main{
+        background-color: transparent;
+        nav{
+            margin: 30px;
+            form{
+                text-align-last: center;
+                fieldset{
+                    border: 2px solid wheat;
+                    legend{
+                        list-style-type: disc;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: lighter;
+                        text-align-last: center;
+                        color: rgb(238, 235, 85);
+                        @include animation(intermitente,3.5s,infinite);
+                    }
+                    label{
+                        @include flex(column,space-between,center);
+                        input{
+                            background-color: transparent;
+                            transition: 500ms;
+                        }
+                    }
+                    select{
+                        background-color: transparent;
+                    }
+                    h3{
+                        list-style-type: disc;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: lighter;
+                        text-align-last: center;
+                        color: rgb(238, 235, 85);
+                        @include animation(intermitente,3.5s,infinite);
+                    }
+                    div{
+                        textarea{
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
