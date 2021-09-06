@@ -1,0 +1,44 @@
+header{
+    border: 2px dotted rgb(156, 233, 197);
+    display: flex;
+    flex-direction: column;
+        h1{
+            text-align-last: center;
+            font-family: $fontFamilyBoton;
+            font-weight: 250;
+            font-size: 40px;
+            color: rgb(245, 197, 41);
+            letter-spacing: 3px; 
+            margin: 2rem;
+            @include animation(intermitente,2.5s,infinite);
+        }
+        h2{
+            text-align-last: center;
+            font-family:  $fontFamilyBoton;
+            font-weight: 300;
+            color: rgb(245, 197, 41);
+            font-size: 30px;
+            margin-bottom: 2rem;
+            @include animation(intermitente,1.5s,infinite);
+        } 
+    nav{
+        ul{
+            @include flex(row,space-around,center);
+            height: 150px;  
+            list-style-type: none;  
+        }
+        li:hover{
+            transform: scale(1.1,1.1);
+        }
+        a{
+            font-family: $fontFamilyBoton; 
+            color: $colorTextoBoton; 
+            font-size: $fontsizeBoton; 
+            font-weight: 100;
+            font-style: italic;
+            border: 2.5px solid rgb(156, 233, 197);
+            background-image: $backgroundBoton;
+            text-decoration: none;
+        }
+    }
+}

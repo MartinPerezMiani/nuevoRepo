@@ -1,32 +1,26 @@
-$backgroundFooter:rgb(22, 20, 20);
-$borderFooter: 2px solid blanchedalmond;
 footer{
-    background-color: $backgroundFooter; 
-    border: $borderFooter;
-    h2{
-        list-style-type: disc;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 40px;
-        font-style: normal;
-        text-align-last: center;
-        color: rgb(175, 241, 178);
-        padding-top: 15px;
-        padding-bottom: 15px;
-        animation-name: intermitente;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
+    border: 2.5px dotted #a3d2ca;
+    width: auto;
+    ul{
+        @include flex(row,space-around ,center);
+        height: 150px;  
+        list-style-type: none;   
+        i{
+            border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            font-size: 40px;
+            color: #a3d2ca;
+            @include animation(intermitente,2s,infinite);
+        }
+        i:hover{
+            transform: scale(1.1,1.1);
+        }
     }
     p{
         text-align-last: right;
-        color: blanchedalmond;
+        color: #a3d2ca;
         font-size: 10px;
-        padding-top: 2px;
-        padding-right: 3px; 
+        padding-right: 10px; 
     }
-    svg{
-        margin-top: 8px;
-        margin-left: 30%;
-        color:  rgb(255, 216, 158);
-        justify-content: space-around;
-     }
 }

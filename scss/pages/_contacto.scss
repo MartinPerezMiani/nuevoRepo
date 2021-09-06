@@ -1,31 +1,6 @@
 .bodyC{
-    background-image: radial-gradient(rgb(255, 94, 121),black);
-    header{
-        nav{
-            ul{
-                display: flex;
-                height: 150px;  
-                list-style-type: none;
-                justify-content: space-around;
-                align-items: center;  
-            }
-            li:hover{
-                transform: scale(1.1,1.1);
-            }
-            a{
-                font-family: $fontFamilyBoton;
-                color: $colorTextoBoton; 
-                font-size: $fontsizeBoton; 
-                font-weight: 100;
-                font-style: italic;
-                border: 2.5px solid rgb(156, 233, 197);
-                background-image: $backgroundBoton;
-                text-decoration: none;
-            }
-        }
-    }
+   background-image: radial-gradient(#21243D, black);
     main{
-        background-color: transparent;
         nav{
             margin: 30px;
             form{
@@ -43,13 +18,15 @@
                         @include animation(intermitente,3.5s,infinite);
                     }
                     label{
-                        @include flex(column,space-between,center);
                         input{
+                            @include flex(column,space-around,center);
+                            color: darkgrey;
                             background-color: transparent;
                             transition: 500ms;
                         }
                     }
                     select{
+                        color: darkgrey;
                         background-color: transparent;
                     }
                     h3{

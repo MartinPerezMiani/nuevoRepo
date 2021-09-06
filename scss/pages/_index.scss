@@ -1,60 +1,29 @@
-.bodyI{
-    background-image: radial-gradient(rgb(0, 0, 133), rgb(3, 2, 20));
-    header{       
-        h1{
-            text-align-last: center;
-            font-family: $fontFamilyBoton;
-            font-weight: 300;
-            font-size: 50px;
-            color: rgb(245, 197, 41);
-            letter-spacing: 3px; 
-            margin: 100px;
-            @include animation(intermitente,2.5s,infinite);
-        }
-        h2{
-            text-align-last: center;
-            font-family:  $fontFamilyBoton;
-            font-weight: 300;
-            color: rgb(245, 197, 41);
-            font-size: 30px;
-            margin-bottom: 50px;
-            @include animation(intermitente,1.5s,infinite);
-        }  
-        nav{
-            ul{
-                @include flex(row,space-around ,center);
-                height: 150px;  
-                list-style-type: none;  
-            }
-            li:hover{
-                transform: scale(1.1,1.1);
-            }
-            a{
-                font-family: $fontFamilyBoton; 
-                color: $colorTextoBoton; 
-                font-size: $fontsizeBoton; 
-                font-weight: 100;
-                font-style: italic;
-                border: 2.5px solid rgb(156, 233, 197);
-                background-image: $backgroundBoton;
-                text-decoration: none;
-            }
-        }
-    }
+.bodyI{   
+   background-image: radial-gradient(#21243D, black);
     main{
-        background-color: rgb(22, 20, 20);
+        margin-top: 3%;
+        div{
+            img{
+                height: 60%;
+                width: 80%;
+                border-radius: 4%;
+                border: 1px solid whitesmoke;
+            }
+        }
         p{
             list-style-type: disc;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: 35px;
+            font-size: 30px;
             font-style: normal;
             font-weight: 200;
             text-align-last: center;
             color: rgb(255, 236, 131);
             @include animation(intermitente,5s,infinite);
+            margin-left: 2rem;
             margin-bottom: 0%;
-            border: 2px solid blanchedalmond;
-            border-bottom: none;
         }
-    } 
+    }   
 }
+
+
+

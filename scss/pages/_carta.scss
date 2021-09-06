@@ -1,50 +1,28 @@
 body{
-    .headerC{
-        background-image: radial-gradient(blue,black);
-        nav{
-            ul{
-                display: flex;
-                height: 150px;  
-                list-style-type: none;
-                justify-content: space-around;
-                align-items: center;  
-            }
-            li:hover{
-                transform: scale(1.1,1.1);
-            }
-            a{
-                font-family: $fontFamilyBoton; 
-                color: $colorTextoBoton; 
-                font-size: $fontsizeBoton; 
-                font-weight: 100;
-                font-style: italic;
-                border: 2.5px solid rgb(156, 233, 197);
-                background-image: $backgroundBoton;
-                text-decoration: none;
-            }
-        }
-    }
+    background-image: radial-gradient(#21243D, black);
     .main{
-        margin: 0%;
-        background-image: radial-gradient(rgb(238, 116, 136),rgb(7, 2, 2));
-        tr{
-            td{
+        background-color: rgb(153, 114, 226);
+        table{
+            margin-bottom: 0px;
+         tr{
+             td{
                 font-size: medium;
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-weight: bolder;
                 text-align-last: center;
             }
-            th{
-                color: rgba(38, 7, 51, 0.76);
+              th{
+                color: rgb(31, 10, 39);
                 font-size: x-large;
                 font-weight: bolder;
                 text-align-last: center;
-                padding: 10px;
+                padding: 0px;
                @include animation(intermitente,2s,infinite);
             }
-            ol{
+             ol{
                 padding-left: 25px;
             }
+         }
         }
     }
 }

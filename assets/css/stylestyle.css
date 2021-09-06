@@ -1,0 +1,421 @@
+footer {
+  border: 2.5px dotted #a3d2ca;
+  width: auto;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  list-style-type: none;
+}
+
+footer ul i {
+  border-radius: 50%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  color: #a3d2ca;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+footer ul i:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+footer p {
+  text-align-last: right;
+  color: #a3d2ca;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+@-webkit-keyframes intermitente {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes intermitente {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*mediaquery para headers*/
+@media only screen and (max-width: 700px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header h1 {
+    font-size: 15px;
+    text-align-last: center;
+  }
+  header h2 {
+    font-size: 10px;
+    text-align-last: center;
+  }
+  header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+  }
+  header ul li:hover {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  header ul a {
+    font-family: "Press Start 2P", cursive;
+    color: #c1c1db;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    border: 2.5px solid #9ce9c5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#3aafaf));
+    background-image: linear-gradient(blue, #3aafaf);
+    text-decoration: none;
+  }
+}
+
+header {
+  border: 2px dotted #9ce9c5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header h1 {
+  text-align-last: center;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 250;
+  font-size: 40px;
+  color: #f5c529;
+  letter-spacing: 3px;
+  margin: 2rem;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+header h2 {
+  text-align-last: center;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 300;
+  color: #f5c529;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  list-style-type: none;
+}
+
+header nav li:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+header nav a {
+  font-family: "Press Start 2P", cursive;
+  color: #c1c1db;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+  border: 2.5px solid #9ce9c5;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#3aafaf));
+  background-image: linear-gradient(blue, #3aafaf);
+  text-decoration: none;
+}
+
+.bodyI {
+  background-image: radial-gradient(#21243D, black);
+}
+
+.bodyI main {
+  margin-top: 3%;
+}
+
+.bodyI main div img {
+  height: 60%;
+  width: 80%;
+  border-radius: 4%;
+  border: 1px solid whitesmoke;
+}
+
+.bodyI main p {
+  list-style-type: disc;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  text-align-last: center;
+  color: #ffec83;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  margin-left: 2rem;
+  margin-bottom: 0%;
+}
+
+body {
+  background-image: radial-gradient(#21243D, black);
+}
+
+body .main {
+  background-color: #9972e2;
+}
+
+body .main table {
+  margin-bottom: 0px;
+}
+
+body .main table tr td {
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  text-align-last: center;
+}
+
+body .main table tr th {
+  color: #1f0a27;
+  font-size: x-large;
+  font-weight: bolder;
+  text-align-last: center;
+  padding: 0px;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body .main table tr ol {
+  padding-left: 25px;
+}
+
+.bodyC {
+  background-image: radial-gradient(#21243D, black);
+}
+
+.bodyC main nav {
+  margin: 30px;
+}
+
+.bodyC main nav form {
+  text-align-last: center;
+}
+
+.bodyC main nav form fieldset {
+  border: 2px solid wheat;
+}
+
+.bodyC main nav form fieldset legend {
+  list-style-type: disc;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: lighter;
+  text-align-last: center;
+  color: #eeeb55;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.bodyC main nav form fieldset label input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: darkgrey;
+  background-color: transparent;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.bodyC main nav form fieldset select {
+  color: darkgrey;
+  background-color: transparent;
+}
+
+.bodyC main nav form fieldset h3 {
+  list-style-type: disc;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: lighter;
+  text-align-last: center;
+  color: #eeeb55;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.bodyC main nav form fieldset div textarea {
+  background-color: transparent;
+}
+
+.bodyP {
+  background-image: radial-gradient(#21243D, black);
+}
+
+.bodyP main {
+  background-color: transparent;
+}
+
+.bodyP main h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  text-align-last: center;
+  color: #a3d2ca;
+  margin: 20px;
+  letter-spacing: 5px;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.bodyP main section p {
+  grid-area: esp1;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  text-align-last: center;
+  color: #9db3b0;
+  letter-spacing: 5px;
+}
+
+.bodyP main section div img {
+  height: 80%;
+  width: 90%;
+  border-radius: 3%;
+  border: 2px double #bdbde6;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.bodyP main h2 {
+  list-style-type: disc;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  text-align-last: center;
+  color: #aff1b2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-animation-name: intermitente;
+          animation-name: intermitente;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.body {
+  background-image: radial-gradient(#21243D, black);
+}
+
+.body main {
+  margin-top: 5px;
+}
+
+.body main div img {
+  border: 1px double blanchedalmond;
+  width: 70%;
+  height: 70%;
+}
+
+.body main div img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.body main p {
+  margin: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  color: whitesmoke;
+  font-weight: 200;
+}
+/*# sourceMappingURL=stylestyle.css.map */

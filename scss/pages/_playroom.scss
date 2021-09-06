@@ -1,74 +1,16 @@
-*{
-    margin: 0%;
-    padding: 0%;
-}
-@keyframes intermitente{
-    0% {
-        opacity: 0.5;
-    }
-    50%{
-        
-        opacity: 0.75;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-img:hover{
-    transform: scale(1.1,1.1);
-}
-$colorTextoBoton: rgb(193, 193, 219);
-$fontFamilyBoton: 'Press Start 2P', cursive;
-$fontsizeBoton: 20px;
-$backgroundBoton: linear-gradient(blue, rgb(58, 175, 175));
-@mixin flex($dir , $justify , $align){
-    display: flex;
-    direction: $dir;
-    justify-content: $justify;
-    align-items: $align;
-}
-@mixin animation($name , $duration , $iteration){
-    animation-name: $name;
-    animation-duration: $duration;
-    animation-iteration-count: $iteration;
-}
 .bodyP{
-   background-image: radial-gradient(rgb(231, 12, 213),rgba(12, 60, 165, 0.609));
-    header{
-        nav{
-            ul{
-                display: flex;
-                height: 150px;  
-                list-style-type: none;
-                justify-content: space-around;
-                align-items: center;  
-            }
-            li:hover{
-                transform: scale(1.1,1.1);
-            }
-            a{
-                font-family: $fontFamilyBoton;
-                color: $colorTextoBoton;  
-                font-size: $fontsizeBoton; 
-                font-weight: 100;
-                font-style: italic;
-                border: 2.5px solid rgb(156, 233, 197);
-                background-image: $backgroundBoton;
-                text-decoration: none;
-            }
-        }
-    }
+    background-image: radial-gradient(#21243D, black);
     main{
         background-color: transparent;
-        h1{
+        h1{ 
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 50px;
             font-weight: 600;
             text-align-last: center;
-            color: cyan;
+            color: #a3d2ca;
             margin: 20px; 
-            letter-spacing: 5px;   
-            @include animation(intermitente,0.8s,infinite);
+            letter-spacing: 5px;  
+            @include animation(intermitente,2s,infinite);
         }
         section{
             p{
@@ -81,14 +23,24 @@ $backgroundBoton: linear-gradient(blue, rgb(58, 175, 175));
             }
             div{
                 img{
-                    height: 400px;
-                    width: 450px;
-                    border: 1px solid rgb(189, 189, 230);
-                    margin-top: 1px;
-                    margin-bottom: 1px;
-                    transition: 700ms;
-                    }
+                    height: 80%;
+                    width: 90%;
+                    border-radius: 3%;
+                    border: 2px double rgb(189, 189, 230);
+                    transition: 1s;
                 }
             }
+        }
+        h2{
+            list-style-type: disc;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            text-align-last: center;
+            color: rgb(175, 241, 178);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            @include animation(intermitente,7s,infinite);
+        }
     } 
 }
