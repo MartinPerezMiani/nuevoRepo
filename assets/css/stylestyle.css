@@ -74,47 +74,6 @@ footer p {
   }
 }
 
-/*mediaquery para headers*/
-@media only screen and (max-width: 700px) {
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  header h1 {
-    font-size: 15px;
-    text-align-last: center;
-  }
-  header h2 {
-    font-size: 10px;
-    text-align-last: center;
-  }
-  header ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    list-style-type: none;
-  }
-  header ul li:hover {
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-  header ul a {
-    font-family: "Press Start 2P", cursive;
-    color: #c1c1db;
-    font-size: 20px;
-    font-weight: 100;
-    font-style: italic;
-    border: 2.5px solid #9ce9c5;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#3aafaf));
-    background-image: linear-gradient(blue, #3aafaf);
-    text-decoration: none;
-  }
-}
-
 header {
   border: 2px dotted #9ce9c5;
   display: -webkit-box;
@@ -130,7 +89,7 @@ header h1 {
   text-align-last: center;
   font-family: "Press Start 2P", cursive;
   font-weight: 250;
-  font-size: 40px;
+  font-size: 3em;
   color: #f5c529;
   letter-spacing: 3px;
   margin: 2rem;
@@ -147,7 +106,7 @@ header h2 {
   font-family: "Press Start 2P", cursive;
   font-weight: 300;
   color: #f5c529;
-  font-size: 30px;
+  font-size: 2em;
   margin-bottom: 2rem;
   -webkit-animation-name: intermitente;
           animation-name: intermitente;
@@ -188,7 +147,163 @@ header nav a {
   text-decoration: none;
 }
 
+/*mediaquery para headers*/
+@media only screen and (max-width: 44em) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header h1 {
+    text-align-last: center;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 150;
+    font-size: 2.5em;
+    color: #f5c529;
+    letter-spacing: 3px;
+    margin: 2rem;
+    -webkit-animation-name: intermitente;
+            animation-name: intermitente;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  header h2 {
+    text-align-last: center;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 100;
+    color: #f5c529;
+    font-size: 2em;
+    margin-bottom: 2rem;
+    -webkit-animation-name: intermitente;
+            animation-name: intermitente;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+  }
+  header ul li:hover {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  header ul a {
+    font-family: "Press Start 2P", cursive;
+    color: #c1c1db;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    border: 2.5px solid #9ce9c5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#3aafaf));
+    background-image: linear-gradient(blue, #3aafaf);
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  header h1 {
+    text-align-last: center;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 150;
+    font-size: 2em;
+    color: #f5c529;
+    letter-spacing: 3px;
+    margin: 2rem;
+    -webkit-animation-name: intermitente;
+            animation-name: intermitente;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  header h2 {
+    text-align-last: center;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 100;
+    color: #f5c529;
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    -webkit-animation-name: intermitente;
+            animation-name: intermitente;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header h1 {
+    text-align-last: center;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 150;
+    font-size: 2em;
+    color: #f5c529;
+    letter-spacing: 3px;
+    margin: 2rem;
+    -webkit-animation-name: intermitente;
+            animation-name: intermitente;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  header h2 {
+    text-align-last: center;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 100;
+    color: #f5c529;
+    font-size: 1em;
+    margin-bottom: 2rem;
+    -webkit-animation-name: intermitente;
+            animation-name: intermitente;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  header ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+  }
+  header ul li:hover {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  header ul a {
+    font-family: "Press Start 2P", cursive;
+    color: #c1c1db;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    border: 2.5px solid #9ce9c5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(#3aafaf));
+    background-image: linear-gradient(blue, #3aafaf);
+    text-decoration: none;
+  }
+}
+
 .bodyI {
+  font-size: 100%;
   background-image: radial-gradient(#21243D, black);
 }
 
